@@ -1,0 +1,100 @@
+.contect-header {
+  width: 100%;
+  @media #{$xl} {
+    height: 500px;
+  }
+  height: 250px;
+  background: $black url(img/contact-us-header.jpg) no-repeat center bottom;
+  background-size: cover;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: inherit;
+    max-width: 962px;
+    margin: 0 auto;
+    padding-left: 30px;
+    h1,
+    p {
+      color: $white;
+    }
+    h1 {
+      font-size: 24px;
+      margin: 0 0 16px;
+      font-weight: bold;
+      @media #{$md} {
+        font-size: 30px;
+      }
+      @media #{$xl} {
+        font-size: 40px;
+      }
+    }
+    p {
+      @media #{$md} {
+        font-size: 20px;
+      }
+      @media #{$xl} {
+        font-size: 24px;
+      }
+      font-size: 18px;
+      margin: 0;
+    }
+  }
+}
+
+.contact-content {
+  padding: 20px 0;
+  @media #{$lg} {
+    padding: 64px 0;
+  }
+}
+
+.contact-form {
+  max-width: 962px;
+  margin: 0 auto 40px;
+  @media #{$xl} {
+    margin: 0 auto 80px;
+  }
+  h3 {
+    font-size: 24px;
+    margin: 0 0 8px;
+  }
+  p {
+    margin: 0 0 20px;
+    @media #{$lg} {
+      margin: 0 0 32px;
+      font-size: 20px;
+    }
+  }
+  .control-label {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 12px;
+    @media #{$xl} {
+      font-size: 18px;
+    }
+    span {
+      color: $red;
+      margin: 0 0 0 2px;
+      font-size: 25px;
+      display: inline-block;
+    }
+  }
+  .form-control {
+    padding: 8px 16px;
+    background-color: #f7f7f7;
+    border: 1px solid $light-grey;
+    border-radius: 4px;
+  }
+  input.form-control {
+    height: 48px;
+  }
+  textarea.form-control {
+    height: 150px;
+  }
+  .form-group {
+    //margin: 0 0 24px;
+    margin: 0 0 16px;
+  }
+}
